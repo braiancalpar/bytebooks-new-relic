@@ -13,6 +13,7 @@ export const Routes = () => (
       <Route exact path="/" component={Catalog} />
       <Route path="/book" component={BookDetail} />
       <Route path="/order" component={Order} />
+      <Route path="*" component={() => <h1>Não há nada aqui.</h1>} />
     </Switch>
     <Footer />
   </AppContext>
